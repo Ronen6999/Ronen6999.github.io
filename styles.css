@@ -1,6 +1,7 @@
 body {
     margin: 0;
     overflow: hidden;
+    font-family: 'Arial', sans-serif; /* Change the font family as desired */
 }
 
 .floating-image {
@@ -19,15 +20,29 @@ body {
 
 @keyframes floatAnimation {
     0%, 100% {
-        transform: translateX(0) translateY(0) scale(1);
+        transform: translateX(0) translateY(0);
     }
     25% {
-        transform: translateX(-10%) translateY(-10%) scale(1.2);
+        transform: translateX(-10%) translateY(-10%);
     }
     50% {
-        transform: translateX(0) translateY(0) scale(1);
+        transform: translateX(0) translateY(0);
     }
     75% {
-        transform: translateX(10%) translateY(10%) scale(1.2);
+        transform: translateX(10%) translateY(10%);
     }
+}
+
+/* Transparent black boxes behind the text lines */
+.hero-content, .about-content, .services-content, .contact-content {
+    background-color: rgba(0, 0, 0, 0.5); /* Adjust transparency with the fourth parameter (0.0 to 1.0) */
+    padding: 1rem;
+    color: #fff;
+    font-size: 1.2rem;
+}
+
+/* Optional: Change the font style for the text */
+.hero-content h2, .about-content h2, .services-content h2, .contact-content h2 {
+    font-family: 'Helvetica', sans-serif; /* Change the font family as desired */
+    font-weight: bold;
 }
