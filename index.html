@@ -4,7 +4,84 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ronen-Bots</title>
-    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #f9f9f9;
+            padding: 20px;
+        }
+        nav {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        h1 {
+            font-size: 24px;
+            margin: 0;
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+        }
+        nav ul li {
+            margin-right: 20px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+        }
+        .hero {
+            background-color: #f1f1f1;
+            text-align: center;
+            padding: 100px 20px;
+        }
+        .about-section {
+            text-align: center;
+            padding: 100px 20px;
+        }
+        .about-section h2 {
+            font-size: 32px;
+        }
+        .about-section p {
+            line-height: 1.6;
+            margin-top: 20px;
+        }
+        .services-section {
+            text-align: center;
+            padding: 100px 20px;
+            background-color: #f1f1f1;
+        }
+        .services-section h2 {
+            font-size: 32px;
+        }
+        .services-section ul {
+            list-style: none;
+            padding: 0;
+        }
+        .services-section li {
+            font-size: 24px;
+            margin-bottom: 10px;
+            cursor: pointer;
+        }
+        .contact-section {
+            text-align: center;
+            padding: 100px 20px;
+        }
+        .contact-section h2 {
+            font-size: 32px;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -15,6 +92,7 @@
                 <li><a href="#about">About</a></li>
                 <li><a href="#services">Services</a></li>
                 <li><a href="#contact">Contact</a></li>
+                <li><a href="your-join-button-link">Join</a></li>
             </ul>
         </nav>
     </header>
@@ -30,29 +108,21 @@
     <section id="about" class="about-section">
         <div class="about-content">
             <h2>About Us</h2>
-            <p>Welcome to Ronen-Bots, your go-to destination for innovative and versatile WhatsApp bots designed to enhance your group communication experience. Our bots offer a wide range of exciting features, making your interactions more enjoyable and efficient. Here are some key highlights:
-
-- ChatGPT Integration: Our bots have integrated OpenAI's ChatGPT, ensuring intelligent and natural conversations with users.
-
-- YouTube Audio Downloader: Easily download audio from YouTube videos directly within the group, making it convenient to share and enjoy audio content.
-
-- Sticker Conversion: Convert images and GIFs into WhatsApp stickers effortlessly, adding a personalized touch to your conversations.
-
-- Google Search Integration: Get instant access to information with a Google search feature directly within your WhatsApp group.
-
-- Weather Reports: Stay updated with real-time weather reports in your area, helping you plan your day and stay prepared for any weather conditions.
-
-- Inbuilt Aichatbot: Engage in interactive conversations with our inbuilt AI chatbot, providing entertainment and information on various topics.
-
-- Ranking Systems: Spice up your group activities with ranking systems that add a competitive element, encouraging participation and engagement.
-
-- Instagram Video Downloader: Easily download videos from Instagram, allowing you to save and share your favorite clips directly within the group.
-
-- And many more exciting features: We continuously innovate and develop new features to enhance your WhatsApp experience. Stay tuned for updates on our upcoming bots and their unique capabilities.
-
-Currently, we operate three bots that are ready to boost your group interactions. However, our commitment to innovation means that more bots are on the way, offering even more functionalities and versatility.
-
-At Ronen-Bots, we strive to provide intuitive and dynamic solutions that make communicating in WhatsApp groups a breeze. Join us today and discover the endless possibilities our WhatsApp bots have to offer.</p>
+            <p>Welcome to Ronen-Bots, your go-to destination for innovative and versatile WhatsApp bots designed to enhance your group communication experience.</p>
+            <p>Our bots offer a wide range of exciting features, making your interactions more enjoyable and efficient. Here are some key highlights:</p>
+            <ul>
+                <li>ChatGPT Integration: Intelligent and natural conversations with users.</li>
+                <li>YouTube Audio Downloader: Easily download audio from YouTube videos within the group.</li>
+                <li>Sticker Conversion: Convert images and GIFs into WhatsApp stickers effortlessly.</li>
+                <li>Google Search Integration: Get instant access to information with a Google search feature.</li>
+                <li>Weather Reports: Stay updated with real-time weather reports in your area.</li>
+                <li>Inbuilt Aichatbot: Engage in interactive conversations with our AI chatbot.</li>
+                <li>Ranking Systems: Add a competitive element to group activities.</li>
+                <li>Instagram Video Downloader: Easily download videos from Instagram.</li>
+                <li>And many more exciting features!</li>
+            </ul>
+            <p>Currently, we operate three bots: Elaina, Mikasa, and Ladybug. More bots are on the way, offering even more functionalities and versatility.</p>
+            <p>At Ronen-Bots, we strive to provide intuitive and dynamic solutions that make communicating in WhatsApp groups a breeze. Join us today and discover the endless possibilities our WhatsApp bots have to offer.</p>
         </div>
     </section>
 
@@ -60,9 +130,9 @@ At Ronen-Bots, we strive to provide intuitive and dynamic solutions that make co
         <div class="services-content">
             <h2>Our Services</h2>
             <ul>
-                <li>✨Elaina Bot</li>
-                <li>🐞Ladybug Bot</li>
-                <li>💗Mikasa Bot</li>
+                <li>✨<a href="#elaina">Elaina Bot</a></li>
+                <li>🐞<a href="#ladybug">Ladybug Bot</a></li>
+                <li>💗<a href="#mikasa">Mikasa Bot</a></li>
                 <!-- Add more services here -->
             </ul>
         </div>
