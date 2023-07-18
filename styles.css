@@ -1,96 +1,36 @@
-/* Reset default margin and padding */
-body, h1, h2, h3, p, ul, li {
-    margin: 0;
-    padding: 0;
-}
-
-/* Set a background color and font styles */
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
-}
-
-/* Style the header and navigation */
-header {
-    background-color: #333;
-    color: #fff;
-    padding: 1rem;
-}
-
-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-nav ul {
-    list-style: none;
-}
-
-nav li {
-    display: inline-block;
-    margin-left: 1rem;
-}
-
-nav a {
-    text-decoration: none;
-    color: #fff;
-}
-
-/* Style the hero section */
 .hero {
-    background-image: url('path/to/your/hero-image.jpg');
-    background-size: cover;
-    background-position: center;
+    position: relative;
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
     color: #fff;
     text-align: center;
+    overflow: hidden;
 }
 
-.hero-content {
-    max-width: 600px;
+/* Add the animated background element */
+.hero::before {
+    content: "https://i.ibb.co/2gdVrky/20230210-160408.jpg";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, #ff3366, #00ccff, #33ff99, #ffcc33);
+    background-size: 400% 400%;
+    animation: gradientAnimation 15s ease infinite;
+    z-index: -1;
 }
 
-.hero h2 {
-    font-size: 3rem;
-    margin-bottom: 1rem;
-}
-
-.cta-btn {
-    display: inline-block;
-    padding: 1rem 2rem;
-    background-color: #ff3366;
-    color: #fff;
-    text-decoration: none;
-    border-radius: 3px;
-}
-
-/* Style the other sections */
-.about-section, .services-section, .contact-section {
-    padding: 4rem 0;
-    text-align: center;
-}
-
-.about-content, .services-content, .contact-content {
-    max-width: 600px;
-    margin: 0 auto;
-}
-
-.services-content ul {
-    list-style: none;
-}
-
-.services-content li {
-    margin-bottom: 1rem;
-}
-
-/* Style the footer */
-footer {
-    background-color: #333;
-    color: #fff;
-    padding: 1rem;
-    text-align: center;
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
 }
