@@ -7,46 +7,31 @@
 		<meta name="msapplication-TileColor" content="#5865f2">
 		<meta name="theme-color" content="#5865f2">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Ronen-Bots | Pages</title>
+		<title>Devin Official | Pages</title>
 		<meta
 			name="description"
-			content="Welcome to Ronen-Bots! We operate 3 WhatsApp bots that are used for WhatsApp groups. Build your dream together with your favorite programming language."
-		/>
+			content="Welcome to my page I'm an Indian half time developer who enjoys creating whatsapp bots." />
 
-		<meta property="og:title" content="Ronen-Bots | Pages" />
+		<meta property="og:title" content="Ronen-Bots Official | Pages" />
 		<meta
 			property="og:description"
-			content="Welcome to Ronen-Bots! We operate 3 WhatsApp bots that are used for WhatsApp groups. Build your dream together with your favorite programming language."
+			content="Welcome to my pages. I'm an Indian half time developer who enjoys creating whatsapp bots."
 		/>
 		<meta property="og:image" content="https://avatars.githubusercontent.com/u/59814852" />
 		<link rel="icon" href="https://avatars.githubusercontent.com/u/59814852" />
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/fontawesome.min.css" />
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
 		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
-		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700" />
-		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:300,400" />
-		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700" />
-		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400" />
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway" />
 	</head>
 <style>
 body,
 h1 {
-	font-family: "Playfair Display", serif;
+	font-family: "Raleway", sans-serif
 }
-h2 {
-	font-family: "Raleway", sans-serif;
-	font-size: 1.8rem;
-	font-weight: 300;
-	margin-bottom: 1rem;
-	color: #fff;
-}
-
 body, html {
-	height: 100%;
-	margin: 0;
-	padding: 0;
+	height: 100%
 }
-
 .bgimg {
 	background-image: linear-gradient( 333deg, rgba(34, 193, 195, 1) 0%, rgba(224, 45, 253, 1) 100%);
 	min-height: 100%;
@@ -54,108 +39,65 @@ body, html {
 	background-size: cover;
 }
 
-.container {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-	height: 100%;
-	padding: 2rem;
-}
-
-.main-heading {
-	font-size: 3rem;
-	font-weight: 700;
-	color: #fff;
-	margin-bottom: 2rem;
-}
-
-.sub-heading {
-	font-family: "Source Sans Pro", sans-serif;
-	font-size: 1.4rem;
-	font-weight: 400;
-	color: #fff;
-	margin-bottom: 2rem;
-	text-align: center;
-}
-
-.button-container {
-	display: flex;
-	justify-content: center;
-}
-
 .button {
+	position: relative;
 	background-color: #5865F2;
+	border-radius: 2px;
+	border: none;
+	box-shadow: 0 2px 1px 0 rgba(0,0,0,0.2), 0 9px 10px 0 rgba(0,0,0,0.19);
 	color: #FFFFFF;
-	font-family: "Montserrat", sans-serif;
-	font-size: 1.2rem;
-	font-weight: 700;
-	border: none;
-	border-radius: 2px;
-	padding: 1rem 2rem;
-	margin: 0.5rem;
-	cursor: pointer;
+	padding: 7px;
 	transition-duration: 0.4s;
 	text-decoration: none;
-}
-
-.button:hover {
-	background-color: #4a55c9;
-}
-
-.whatsapp-description {
-	font-family: "Source Sans Pro", sans-serif;
-	font-size: 1.1rem;
-	font-weight: 300;
-	color: #fff;
-	margin-bottom: 3rem;
-	text-align: center;
-}
-
-.whatsapp-link {
-	color: #fff;
-	text-decoration: underline;
-}
-
-.join-button {
-	background-color: #57F287;
-	color: #000;
-	font-family: "Playfair Display", serif;
-	font-size: 1.2rem;
-	font-weight: 700;
-	border: none;
-	border-radius: 2px;
-	padding: 1rem 2rem;
-	margin-top: 2rem;
+	overflow: hidden;
 	cursor: pointer;
-	transition-duration: 0.4s;
-	text-decoration: none;
 }
 
-.join-button:hover {
-	background-color: #45cc76;
+.button:after {
+	content: "load";
+	background: #f1f1f1;
+	display: block;
+	position: absolute;
+	padding-top: 300%;
+	padding-left: 350%;
+	margin-left: -20px !important;
+	margin-top: -120%;
+	opacity: 0;
+	transition: all 0.8s
 }
-/* Disable zooming on mobile */
-@viewport {
-    zoom: 1.0 !important;
-    min-zoom: 1.0 !important;
-    max-zoom: 1.0 !important;
-    user-zoom: fixed !important;
+
+.button:active:after {
+	padding: 0;
+	margin: 0;
+	opacity: 1;
+	transition: 0s
 }
 </style>
 <body>
-<div class="bgimg">
-	<div class="container">
-		<h1 class="main-heading">RONEN-BOTS</h1>
-		<h2>Click on the Name of the Bot You want for your group</h2>
-		<div class="button-container">
-			<button class="button"><a href="https://wa.me/916000530073">Elaina</a></button>
-			<button class="button"><a href="https://wa.me/916000530073">Ladybug</a></button>
-			<button class="button"><a href="https://wa.me/916000530073">Mikasa</a></button>
-		</div>
-		<p class="whatsapp-description">Join our official WhatsApp support group to get assistance and updates!</p>
-		<a class="join-button" href="https://chat.whatsapp.com/Hooxu1kZEoFKoNpdFLqXMO">Join</a>
+<div class="bgimg w3-display-container w3-animate-opacity w3-text-white">
+	<div class="w3-display-topleft w3-padding-large w3-xlarge"><strong>Devin</strong> <i class="fab fa-dev"></i></div>
+	<div class="w3-display-topright w3-padding-large w3-small"><button class="button" style="background-color:#57F287;color:black;"><a href="https://devin-dev.xyz"><i class="fab fa-battle-net"> Home</i></a></button></div>
+	<div class="w3-display-middle">
+		<h1 class="w3-jumbo w3-animate-top">RONEN BOTS</h1>
+		<p>We develop whatsapp Bots for group's. We currently operate 3 Bots. The Bots are given below. To Get any of the Bot in your gc click on any of the Buttons below.</p>
+		<hr class="w3-border-black" style="margin:auto;width:40%">
+		<p class="w3-large w3-animate-left">
+			<button class="button"><i class="fab fa-github-square"> Elaina</i></button>
+			<button class="button"><i class="fab fa-blogger"> Ladybug</i></button>
+			<button class="button"><i class="fab fa-discord"> Mikasa</i></button>
+		</p>
+		<hr class="w3-border-black" style="margin:auto;width:40%">
+		<p class="w3-large w3-animate-left">
+			<button class="button"><i class="fab fa-instagram-square"> Instagram</i></button>
+			<button class="button"><i class="fab fa-twitter-square"> Twitter</i></button>
+		</p>
+		<hr class="w3-border-black" style="margin:auto;width:40%">
+		<p class="w3-large w3-animate-right">
+			<button class="button"><i class="fab fa-youtube"> Youtube</i></button>
+		</p>
 	</div>
+	<footer class="w3-display-bottomleft w3-padding-large">Made by <a href="https://github.com/Ronen6999" target="_blank"><i class="fab fa-github"> Ronen-Bots</i></a> & powered by ❤️Ronen
+	</footer>
 </div>
 <noscript>
 	<strong
