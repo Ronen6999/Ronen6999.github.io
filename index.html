@@ -10,29 +10,33 @@
 		<title>Ronen-Bots | Pages</title>
 		<meta
 			name="description"
-			content="We operate 3 WhatsApp bots, all are used for WhatsApp groups. Build your dream together with your favorite programming language."
+			content="Welcome to Ronen-Bots! We operate 3 WhatsApp bots that are used for WhatsApp groups. Build your dream together with your favorite programming language."
 		/>
 
 		<meta property="og:title" content="Ronen-Bots | Pages" />
 		<meta
 			property="og:description"
-			content="We operate 3 WhatsApp bots, all are used for WhatsApp groups. Build your dream together with your favorite programming language."
+			content="Welcome to Ronen-Bots! We operate 3 WhatsApp bots that are used for WhatsApp groups. Build your dream together with your favorite programming language."
 		/>
 		<meta property="og:image" content="https://avatars.githubusercontent.com/u/59814852" />
 		<link rel="icon" href="https://avatars.githubusercontent.com/u/59814852" />
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/fontawesome.min.css" />
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
 		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
-		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway" />
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700" />
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:300,400" />
 	</head>
 <style>
 body,
 h1 {
-	font-family: "Raleway", sans-serif
+	font-family: "Montserrat", sans-serif;
 }
 body, html {
-	height: 100%
+	height: 100%;
+	margin: 0;
+	padding: 0;
 }
+
 .bgimg {
 	background-image: linear-gradient( 333deg, rgba(34, 193, 195, 1) 0%, rgba(224, 45, 253, 1) 100%);
 	min-height: 100%;
@@ -40,39 +44,70 @@ body, html {
 	background-size: cover;
 }
 
+.container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	height: 100%;
+	padding: 2rem;
+}
+
+.main-heading {
+	font-family: "Raleway", sans-serif;
+	font-size: 4rem;
+	font-weight: 300;
+	color: #fff;
+	margin-bottom: 2rem;
+}
+
+.sub-heading {
+	font-family: "Montserrat", sans-serif;
+	font-size: 1.5rem;
+	font-weight: 400;
+	color: #fff;
+	margin-bottom: 3rem;
+	text-align: center;
+}
+
+.button-container {
+	display: flex;
+	justify-content: center;
+}
+
 .button {
-	position: relative;
 	background-color: #5865F2;
-	border-radius: 2px;
-	border: none;
-	box-shadow: 0 2px 1px 0 rgba(0,0,0,0.2), 0 9px 10px 0 rgba(0,0,0,0.19);
 	color: #FFFFFF;
-	padding: 7px;
+	font-family: "Montserrat", sans-serif;
+	font-size: 1rem;
+	font-weight: 700;
+	border: none;
+	border-radius: 2px;
+	padding: 1rem 2rem;
+	margin: 0.5rem;
+	cursor: pointer;
 	transition-duration: 0.4s;
 	text-decoration: none;
-	overflow: hidden;
-	cursor: pointer;
 }
 
-.button:after {
-	content: "load";
-	background: #f1f1f1;
-	display: block;
-	position: absolute;
-	padding-top: 300%;
-	padding-left: 350%;
-	margin-left: -20px !important;
-	margin-top: -120%;
-	opacity: 0;
-	transition: all 0.8s
+.button:hover {
+	background-color: #4a55c9;
 }
 
-.button:active:after {
-	padding: 0;
-	margin: 0;
-	opacity: 1;
-	transition: 0s
+.whatsapp-description {
+	font-family: "Montserrat", sans-serif;
+	font-size: 1.2rem;
+	font-weight: 400;
+	color: #fff;
+	margin-bottom: 3rem;
+	text-align: center;
 }
+
+.whatsapp-link {
+	color: #fff;
+	text-decoration: underline;
+}
+
 /* Disable zooming on mobile */
 @viewport {
     zoom: 1.0 !important;
@@ -82,32 +117,17 @@ body, html {
 }
 </style>
 <body>
-<div class="bgimg w3-display-container w3-animate-opacity w3-text-white">
-	<div class="w3-display-topleft w3-padding-large w3-xlarge"><strong>Ronen-Bots</strong> <i class="fab fa-dev"></i></div>
-	<div class="w3-display-topright w3-padding-large w3-small"><button class="button" style="background-color:#57F287;color:black;"><a href="https://devin-dev.xyz"><i class="fab fa-battle-net"> Home</i></a></button></div>
-	<div class="w3-display-middle">
-		<h1 class="w3-jumbo w3-animate-top">RONEN-BOTS</h1>
-		<p>Build your dream together with your favorite programming language</p>
-		<hr class="w3-border-black" style="margin:auto;width:40%">
-		<p class="w3-large w3-animate-left">
-			<button class="button"><a href="https://wa.me/916000530073"><i class="fas fa-bug"> Elaina</i></a></button>
-			<button class="button"><a href="https://wa.me/916000530073"><i class="fas fa-bug"> Ladybug</i></a></button>
-			<button class="button"><a href="https://wa.me/916000530073"><i class="fas fa-bug"> Mikasa</i></a></button>
-		</p>
-		<hr class="w3-border-black" style="margin:auto;width:40%">
-		<p class="w3-large w3-animate-left">
-			<button class="button"><a href="https://www.instagram.com"><i class="fab fa-instagram-square"> Instagram</i></a></button>
-			<button class="button"><a href="https://www.twitter.com"><i class="fab fa-twitter-square"> Twitter</i></a></button>
-		</p>
-		<hr class="w3-border-black" style="margin:auto;width:40%">
-		<p class="w3-large w3-animate-right">
-			<button class="button"><a href="https://www.youtube.com"><i class="fab fa-youtube"> Youtube</i></a></button>
-			<button class="button"><a href="https://chat.whatsapp.com/Hooxu1kZEoFKoNpdFLqXMO">Join</a></button>
-		</p>
-        <p style="text-align:center">Click join to join our official WhatsApp support group.</p>
+<div class="bgimg">
+	<div class="container">
+		<h1 class="main-heading">RONEN-BOTS</h1>
+		<p class="sub-heading">Welcome to Ronen-Bots! We operate 3 WhatsApp bots that are used for WhatsApp groups. Build your dream together with your favorite programming language.</p>
+		<div class="button-container">
+			<button class="button"><a href="https://wa.me/916000530073">Elaina</a></button>
+			<button class="button"><a href="https://wa.me/916000530073">Ladybug</a></button>
+			<button class="button"><a href="https://wa.me/916000530073">Mikasa</a></button>
+		</div>
+		<p class="whatsapp-description">Click <span class="whatsapp-link"><a href="https://chat.whatsapp.com/Hooxu1kZEoFKoNpdFLqXMO">here</a></span> to join our official WhatsApp support group.</p>
 	</div>
-	<footer class="w3-display-bottomleft w3-padding-large">Made by <a href="https://github.com/Ronen-Bots" target="_blank"><i class="fab fa-github"> Ronen-Bots</i></a> & powered by ❤
-	</footer>
 </div>
 <noscript>
 	<strong
