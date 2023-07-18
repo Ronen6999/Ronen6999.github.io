@@ -4,17 +4,34 @@ body, h1, h2, h3, p, ul, li {
     padding: 0;
 }
 
-/* Set a background color and font styles */
+/* Set a background gradient */
 body {
     font-family: 'Arial', sans-serif; /* Change the font family as desired */
-    background-color: #f0f0f0;
+    background: linear-gradient(135deg, #f4a45f, #f48f8f, #9f87cf, #7cd0cf);
+    background-size: 400% 400%;
+    animation: gradientAnimation 15s ease infinite;
+}
+
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
 }
 
 /* Style the header and navigation */
 header {
-    background-color: #333;
-    color: #fff;
+    background-color: rgba(255, 255, 255, 0.9);
+    color: #333;
     padding: 1rem;
+    position: sticky;
+    top: 0;
+    z-index: 999;
 }
 
 nav {
@@ -34,7 +51,7 @@ nav li {
 
 nav a {
     text-decoration: none;
-    color: #fff;
+    color: #333;
 }
 
 /* Style the hero section */
@@ -49,39 +66,10 @@ nav a {
     overflow: hidden;
 }
 
-.floating-image {
-    background-image: url('https://mcdn.wallpapersafari.com/medium/72/43/egft36.png'); /* Replace with your image URL */
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -1;
-    animation: floatAnimation 8s ease-in-out infinite;
-}
-
-@keyframes floatAnimation {
-    0%, 100% {
-        transform: translateX(0) translateY(0);
-    }
-    25% {
-        transform: translateX(-10%) translateY(-10%);
-    }
-    50% {
-        transform: translateX(0) translateY(0);
-    }
-    75% {
-        transform: translateX(10%) translateY(10%);
-    }
-}
-
 .hero-content {
     max-width: 600px;
     padding: 2rem;
-    background-color: rgba(0, 0, 0, 0.7); /* Adjust transparency with the fourth parameter (0.0 to 1.0) */
+    background-color: rgba(0, 0, 0, 0.7);
     border-radius: 10px;
 }
 
@@ -109,7 +97,7 @@ nav a {
     max-width: 600px;
     margin: 0 auto;
     padding: 2rem;
-    background-color: rgba(0, 0, 0, 0.7); /* Adjust transparency with the fourth parameter (0.0 to 1.0) */
+    background-color: rgba(0, 0, 0, 0.7);
     border-radius: 10px;
     color: #fff;
 }
@@ -124,8 +112,8 @@ nav a {
 
 /* Style the footer */
 footer {
-    background-color: #333;
-    color: #fff;
+    background-color: rgba(255, 255, 255, 0.9);
+    color: #333;
     padding: 1rem;
     text-align: center;
 }
