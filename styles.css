@@ -1,7 +1,52 @@
-body {
+/* Reset default margin and padding */
+body, h1, h2, h3, p, ul, li {
     margin: 0;
-    overflow: hidden;
+    padding: 0;
+}
+
+/* Set a background color and font styles */
+body {
     font-family: 'Arial', sans-serif; /* Change the font family as desired */
+    background-color: #f0f0f0;
+}
+
+/* Style the header and navigation */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav li {
+    display: inline-block;
+    margin-left: 1rem;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+}
+
+/* Style the hero section */
+.hero {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-align: center;
+    overflow: hidden;
 }
 
 .floating-image {
@@ -9,8 +54,8 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: 100%;
     position: absolute;
     top: 0;
     left: 0;
@@ -33,16 +78,54 @@ body {
     }
 }
 
-/* Transparent black boxes behind the text lines */
-.hero-content, .about-content, .services-content, .contact-content {
-    background-color: rgba(0, 0, 0, 0.5); /* Adjust transparency with the fourth parameter (0.0 to 1.0) */
-    padding: 1rem;
-    color: #fff;
-    font-size: 1.2rem;
+.hero-content {
+    max-width: 600px;
+    padding: 2rem;
+    background-color: rgba(0, 0, 0, 0.7); /* Adjust transparency with the fourth parameter (0.0 to 1.0) */
+    border-radius: 10px;
 }
 
-/* Optional: Change the font style for the text */
-.hero-content h2, .about-content h2, .services-content h2, .contact-content h2 {
-    font-family: 'Helvetica', sans-serif; /* Change the font family as desired */
-    font-weight: bold;
+.hero h2 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.cta-btn {
+    display: inline-block;
+    padding: 1rem 2rem;
+    background-color: #ff3366;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 3px;
+}
+
+/* Style the other sections */
+.about-section, .services-section, .contact-section {
+    padding: 4rem 0;
+    text-align: center;
+}
+
+.about-content, .services-content, .contact-content {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 2rem;
+    background-color: rgba(0, 0, 0, 0.7); /* Adjust transparency with the fourth parameter (0.0 to 1.0) */
+    border-radius: 10px;
+    color: #fff;
+}
+
+.services-content ul {
+    list-style: none;
+}
+
+.services-content li {
+    margin-bottom: 1rem;
+}
+
+/* Style the footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
 }
