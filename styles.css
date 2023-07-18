@@ -4,34 +4,30 @@ body {
 }
 
 .floating-image {
-    width: 100%;
-    height: 100%;
+    background-image: url('https://i.ibb.co/2gdVrky/20230210-160408.jpg'); /* Replace with your image URL */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100vw;
+    height: 100vh;
     position: absolute;
     top: 0;
     left: 0;
     z-index: -1;
-}
-
-.floating-image::before {
-    content: '';
-    background-image: url('https://i.ibb.co/2gdVrky/20230210-160408.jpg'); /* Replace with your image URL */
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    width: 300px; /* Adjust the size of the floating image */
-    height: 300px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     animation: floatAnimation 8s ease-in-out infinite;
 }
 
 @keyframes floatAnimation {
     0%, 100% {
-        transform: translate(-50%, -50%) rotate(0deg);
+        transform: translateX(0) translateY(0) scale(1);
+    }
+    25% {
+        transform: translateX(-10%) translateY(-10%) scale(1.2);
     }
     50% {
-        transform: translate(-50%, -50%) rotate(360deg);
+        transform: translateX(0) translateY(0) scale(1);
+    }
+    75% {
+        transform: translateX(10%) translateY(10%) scale(1.2);
     }
 }
