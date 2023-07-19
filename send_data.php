@@ -7,7 +7,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 
     // Customize the email subject and recipient address
     $subject = "New $bot Bot Submission";
-    $recipient = "your_email@example.com"; // Replace with your email address
+    $recipient = "ronensingha85@gmail.com"; // Replace with your email address
 
     // Email content
     $message = "Name: $name\n";
