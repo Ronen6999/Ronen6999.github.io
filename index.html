@@ -30,6 +30,12 @@
       text-align: center;
     }
 
+    .button-container {
+      display: flex; /* Add flex display to the button container */
+      flex-wrap: wrap; /* Wrap the buttons to next line if the container width is not enough */
+      justify-content: center; /* Center the buttons horizontally */
+    }
+
     .button {
       padding: 15px 30px;
       font-size: 20px;
@@ -69,13 +75,13 @@
   </video>
 
   <div class="container">
-    <h1>Ronen Bots</h1>
+    <h1>RONEN BOTS</h1> <!-- Adjusted the heading here -->
 
-    <div>
-  <a class="button" href="https://wa.me/15069751205?text=Elaina">Elaina</a>
-  <a class="button" href="https://wa.me/15069751205?text=Ladybug">Ladybug</a>
-  <a class="button" href="https://wa.me/15069751205?text=Mikasa">Mikasa</a>
-</div>
+    <div class="button-container"> <!-- Added a container for the buttons -->
+      <a class="button" href="https://wa.me/15069751205?text=Elaina">Elaina</a>
+      <a class="button" href="https://wa.me/15069751205?text=Ladybug">Ladybug</a>
+      <a class="button" href="https://wa.me/15069751205?text=Mikasa">Mikasa</a>
+    </div>
 
     <div>
       <p>Our official support group</p>
