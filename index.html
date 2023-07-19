@@ -9,6 +9,7 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
+            touch-action: manipulation; /* Disable user zooming on touch devices */
         }
         header {
             background-color: #f9f9f9;
@@ -124,12 +125,17 @@
             border-radius: 10px;
             box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
         }
+        /* Adjust the logo size */
+        img.logo {
+            max-width: 200px;
+        }
     </style>
 </head>
 <body>
     <header>
         <nav>
-            <h1><img src="https://i.ibb.co/nQhvyGq/20230719-070136.png" alt="Your Logo"></h1>
+            <!-- Add the "logo" class to the img tag -->
+            <h1><img class="logo" src="https://i.ibb.co/nQhvyGq/20230719-070136.png" alt="Your Logo"></h1>
             <ul>
                 <li><a href="#HOME">HOME</a></li>
                 <li><a href="#ABOUT">ABOUT</a></li>
