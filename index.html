@@ -8,12 +8,6 @@
       margin: 0;
       padding: 0;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Aesthetic font */
-      background-image: url('https://graph.org/file/ef1fdf817092e3243497a.mp4');
-      background-size: cover;
-      background-position: center;
-      color: #fff;
-      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-      overflow: hidden; /* To prevent video overflow */
     }
     header {
       background-color: #222;
@@ -24,6 +18,10 @@
     .main-content {
       padding: 40px;
       text-align: center;
+      color: #fff;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+      position: relative; /* Add position relative for the video container */
+      z-index: 1; /* Set z-index to 1 to position content above the video */
     }
     .transparent-box {
       background-color: rgba(0, 0, 0, 0.5);
@@ -61,6 +59,16 @@
         align-items: center;
       }
     }
+    /* Adjust the video styling */
+    video {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: -1; /* Set z-index to -1 to position the video behind other elements */
+    }
   </style>
 </head>
 <body>
@@ -69,11 +77,11 @@
   </header>
 
   <div class="main-content">
+    <video src="https://graph.org/file/ef1fdf817092e3243497a.mp4" loop autoplay muted></video>
     <div class="transparent-box">
       <h2 style="font-weight: bold; font-size: 24px;">WhatsApp Bot Services for Group Assistance</h2>
       <p style="font-size: 18px;">We provide amazing WhatsApp bots to assist your groups.</p>
       <p style="font-size: 18px;">To know how our bot works and its features, click on the button below.</p>
-
       <!-- Replace "BUTTON_LINK_HERE" with the link to the button -->
       <a href="BUTTON_LINK_HERE" style="display: inline-block; margin-top: 20px; padding: 12px 24px; background-color: #4CAF50; color: #fff; text-decoration: none; font-size: 16px; border-radius: 4px; font-weight: bold;">Learn More</a>
     </div>
@@ -87,10 +95,8 @@
         <p style="font-size: 18px;">100rs - 3 months (per group)</p>
       </div>
     </div>
-
     <!-- Replace "BUTTON_LINK_HERE" with the link to the button for availing the service -->
     <a href="https://wa.me/15069751205" style="display: inline-block; margin-top: 20px; padding: 12px 24px; background-color: #4CAF50; color: #fff; text-decoration: none; font-size: 16px; border-radius: 4px; font-weight: bold;">Get your own Bot</a>
-
     <div class="transparent-box" style="margin-top: 30px;">
       <p style="font-size: 16px;">To add bot to your Whatsapp group, click on "Get your own Bot" button given above and it will redirect you to the owner's number then type "Bot" and follow the further instructions provided by the owner.</p>
     </div>
