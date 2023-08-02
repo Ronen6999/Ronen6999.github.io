@@ -8,7 +8,7 @@
       margin: 0;
       padding: 0;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Aesthetic font */
-      overflow: hidden; /* Hide any content that overflows the viewport */
+      overflow-x: hidden; /* Hide horizontal scrollbar */
     }
     header {
       background-color: #222;
@@ -61,6 +61,9 @@
       .subscription {
         align-items: center;
       }
+      body {
+        overflow-y: scroll; /* Enable vertical scrolling on mobile devices */
+      }
     }
     /* Adjust the video styling */
     video {
@@ -105,7 +108,7 @@
   </div>
 
   <div class="footer">
-    <p>©Ronen-Bots.inc</p>
+    <p>All rights reserved. ©Ronen-Bots.inc</p>
   </div>
   <video src="https://graph.org/file/ef1fdf817092e3243497a.mp4" loop autoplay muted></video>
 </body>
