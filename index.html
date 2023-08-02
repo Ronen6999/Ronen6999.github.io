@@ -7,7 +7,7 @@
     body {
       margin: 0;
       padding: 0;
-      font-family: Arial, sans-serif;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Aesthetic font */
     }
     header {
       background-color: #222;
@@ -37,6 +37,12 @@
       flex-direction: column;
       align-items: center;
     }
+    .subscription-box {
+      border: 2px solid #000; /* Black box border */
+      padding: 20px;
+      border-radius: 10px;
+      margin-top: 20px;
+    }
     .footer {
       background-color: #222;
       color: #fff;
@@ -58,7 +64,7 @@
 </head>
 <body>
   <header>
-    <h1 style="font-weight: bold; font-size: 36px;">RONEN BOTS</h1>
+    <h1 style="font-weight: bold; font-size: 36px; font-family: 'Pacifico', cursive;">RONEN BOTS</h1> <!-- Aesthetic font -->
   </header>
 
   <div class="main-content">
@@ -73,10 +79,12 @@
   </div>
 
   <div class="subscription">
-    <div class="transparent-box" style="display: flex; flex-direction: column; align-items: center;">
+    <div class="subscription-box">
       <p style="font-size: 20px; font-weight: bold;">Subscription Plans:</p>
-      <p style="font-size: 18px;">50rs 1 month (per group)</p>
-      <p style="font-size: 18px;">100rs 3 months (per group)</p>
+      <div style="display: flex; justify-content: space-between; padding: 10px;">
+        <p style="font-size: 18px;">50rs 1 month (per group)</p>
+        <p style="font-size: 18px;">100rs 3 months (per group)</p>
+      </div>
     </div>
 
     <!-- Replace "BUTTON_LINK_HERE" with the link to the button for availing the service -->
