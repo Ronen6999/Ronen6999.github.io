@@ -2,6 +2,7 @@
 <html>
 <head>
   <title>Ronen Bots - WhatsApp Bot Services</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
     body {
       margin: 0;
@@ -41,6 +42,19 @@
       color: #fff;
       padding: 10px;
       text-align: center;
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+    }
+
+    /* Mobile-friendly adjustments */
+    @media only screen and (max-width: 768px) {
+      .main-content {
+        padding: 20px;
+      }
+      .subscription {
+        align-items: flex-start;
+      }
     }
   </style>
 </head>
