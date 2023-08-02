@@ -23,9 +23,18 @@
       color: #fff;
       text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     }
+    .transparent-box {
+      background-color: rgba(0, 0, 0, 0.5);
+      padding: 20px;
+      border-radius: 10px;
+      display: inline-block;
+    }
     .subscription {
       font-size: 18px;
       margin: 30px 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
     }
     .footer {
       background-color: #222;
@@ -41,23 +50,28 @@
   </header>
 
   <div class="main-content">
-    <h2 style="font-weight: bold; font-size: 24px;">WhatsApp Bot Services for Group Assistance</h2>
-    <p style="font-size: 18px;">We provide amazing WhatsApp bots to assist your groups.</p>
-    <p style="font-size: 18px;">To know how our bot works and its features, click on the button below.</p>
+    <div class="transparent-box">
+      <h2 style="font-weight: bold; font-size: 24px;">WhatsApp Bot Services for Group Assistance</h2>
+      <p style="font-size: 18px;">We provide amazing WhatsApp bots to assist your groups.</p>
+      <p style="font-size: 18px;">To know how our bot works and its features, click on the button below.</p>
 
-    <!-- Replace "BUTTON_LINK_HERE" with the link to the button -->
-    <a href="BUTTON_LINK_HERE" style="display: inline-block; margin-top: 20px; padding: 12px 24px; background-color: #4CAF50; color: #fff; text-decoration: none; font-size: 16px; border-radius: 4px; font-weight: bold;">Learn More</a>
-
-    <div class="subscription">
-      <p style="font-size: 20px; font-weight: bold;">Subscription Plans:</p>
-      <p style="font-size: 18px;">50rs 1 month (per group)</p>
-      <p style="font-size: 18px;">100rs 3 months (per group)</p>
+      <!-- Replace "BUTTON_LINK_HERE" with the link to the button -->
+      <a href="BUTTON_LINK_HERE" style="display: inline-block; margin-top: 20px; padding: 12px 24px; background-color: #4CAF50; color: #fff; text-decoration: none; font-size: 16px; border-radius: 4px; font-weight: bold;">Learn More</a>
     </div>
 
-    <!-- Replace "BUTTON_LINK_HERE" with the link to the button for availing the service -->
-    <a href="BUTTON_LINK_HERE" style="display: inline-block; margin-top: 20px; padding: 12px 24px; background-color: #4CAF50; color: #fff; text-decoration: none; font-size: 16px; border-radius: 4px; font-weight: bold;">Avail WhatsApp Bot Service</a>
+    <div class="subscription">
+      <div class="transparent-box">
+        <p style="font-size: 20px; font-weight: bold;">Subscription Plans:</p>
+        <p style="font-size: 18px;">50rs 1 month (per group)</p>
+        <p style="font-size: 18px;">100rs 3 months (per group)</p>
+      </div>
 
-    <p style="font-size: 16px; margin-top: 30px;">To subscribe, share the group link and send the subscription amount to the provided Paytm ID.</p>
+      <!-- Replace "BUTTON_LINK_HERE" with the link to the button for availing the service -->
+      <a href="BUTTON_LINK_HERE" style="display: inline-block; margin-top: 20px; padding: 12px 24px; background-color: #4CAF50; color: #fff; text-decoration: none; font-size: 16px; border-radius: 4px; font-weight: bold;">Avail WhatsApp Bot Service</a>
+
+      <p style="font-size: 16px; margin-top: 30px;">To subscribe, share the group link and send the subscription amount to the provided Paytm ID.</p>
+    </div>
+
   </div>
 
   <div class="footer">
